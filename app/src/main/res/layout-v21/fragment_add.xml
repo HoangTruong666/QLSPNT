@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ngothanhtuan.productfarmmanager.AddPrFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/imgView"
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <Button
+                    android:text="@string/take"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCam"
+                    android:layout_weight="1"
+                    android:theme="@style/ButtonAdd"
+                    android:textColor="@android:color/background_light"/>
+
+                <Button
+                    android:text="@string/Chosse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnUpImg"
+                    android:layout_weight="1"
+                    android:theme="@style/ButtonAdd"
+                    android:textColor="@android:color/background_light"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spType"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:ms_hint="chọn loại...."
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Loại"
+            app:ms_thickness="1dp"
+            app:ms_arrowColor="@android:color/black"
+            app:ms_arrowSize="16dp"
+            app:ms_hintColor="@color/colorAccent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtName"
+                android:hint="@string/Namepr" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtCount"
+                android:hint="@string/count"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/edtPrice"
+                android:hint="@string/price"
+                android:layout_marginBottom="5dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:text="@string/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddP"
+                android:layout_weight="1"
+                android:theme="@style/ButtonAdd"
+                android:textColor="@android:color/background_light"
+                tools:targetApi="lollipop" />
+
+            <Button
+                android:text="@string/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancel"
+                android:layout_weight="1"
+                android:theme="@style/ButtonCancel"
+                android:textColor="@android:color/background_light"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
