@@ -25,4 +25,6 @@
     <string name="type1">Loại</string>
     <string name="product">Sản phẩm</string>
     <string name="About">Thông tin</string>
+    <string name="Noti">Thông báo</string>
+
 </resources>
